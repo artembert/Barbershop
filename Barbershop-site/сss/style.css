@@ -1,0 +1,85 @@
+html,
+body {
+	width: 960px;
+	min-height: 1750px;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-image: url("../img/barbershop-index.png");
+	background-repeat: no-repeat;	
+}
+
+/*body {
+	background-image: url("../img/bg-photo.jpg");
+	background-repeat: no-repeat;
+	background-color: #000000;
+}*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header {
+	margin-bottom: 58px;
+	min-height: 72px;
+}
+
+.container {
+	width: 940px;
+	margin: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.main-navigation {
+	width: 780px;
+	float: left;
+}
+
+.user-block {
+	width: 140px;
+	float: right;
+}
+
+.index-logo {
+	height: 204px;
+	width: 368px;
+	margin: auto;
+	margin-bottom: 25px;
+}
+
+.feauteres {
+	margin-bottom: 75px;
+}
+
+.feauteres-item {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+	min-height: 180px;
+}
+
+.feauteres-item:last-child {
+	margin-right: 0;
+}
+
+.index-content {
+	padding: 55px 80px; 
+	margin-bottom: 35px;
+}
+
+.index-contetn-left {
+	width: 380px;
+	float: left;
+	min-height: 325px;
+}
+
+.index-contetn-right {
+	width: 300px;
+	float: right;
+	min-height: 325px;
+}

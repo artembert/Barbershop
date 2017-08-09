@@ -38,9 +38,10 @@ b {
 div,
 nav,
 section,
-ul,
+li,
 img,
 figure,
+header, main, footer
 b {
 	outline-width: 3px !important;
 	outline-style: solid;
@@ -80,4 +81,11 @@ figure {
 img {
 	outline-color: rgb(0,191,165) !important;
 	background-color: rgba(0,191,165,0.3);
+}
+
+header,
+main,
+footer {
+	outline-color: rgb(98,0,234) !important;
+	background-color: rgba(98,0,234,0.3);
 }
