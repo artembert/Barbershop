@@ -1,16 +1,17 @@
-body {
-	padding: 3px;
-}
 
 body > *,
 body > * > *,
-body > * > * > * {
+body > * > * > *,
+body > * > * > * > *,
+body > * > * > * > * > * {
 	position: relative;
 }
 
 body > *::before,
 body > * > *::before,
-body > * > * > *::before {
+body > * > * > *::before,
+body > * > * > * > *::before 
+body > * > * > * > * > *::before {
 	content: "";
 	position: absolute;
 
@@ -39,6 +40,16 @@ body > * > * > *::before {
 	left: -3px;
 }
 
+body > * > * > * > *::before {
+	top: -3px;
+	left: -3px;
+}
+
+body > * > * > * > * > *::before {
+	top: -3px;
+	left: -3px;
+}
+
 body > * {
 	background: rgba(0, 128, 0, 0.2);
 	box-shadow: 0 0 0 3px green;
@@ -61,20 +72,32 @@ body > * > *::before {
 
 body > * > * > * {
 	background: rgba(234, 255, 45, 0.2);
-	box-shadow: insert 0 0 0 2px rgb(234, 255, 45);
+	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 body > * > * > *::before {
-	color: black;
+	color: white;
 	background: rgb(234, 255, 45);
 }
 
-.main-header::before {
-	content: ".main-header";
+body > * > * > * > * {
+	background: rgba(0, 184, 212, 0.2);
+	box-shadow: inset 0 0 0 2px rgb(0, 184, 212);
 }
 
-.container::before {
-	content: ".container";
+body > * > * > * > *::before {
+	color: white;
+	background: rgb(0,184,212);
+}
+
+body > * > * > * > * > * {
+	background: rgba(197, 17, 98, 0.2);
+	box-shadow: inset 0 0 0 2px rgb(197, 17, 98);
+}
+
+body > * > * > * > * > *::before {
+	color: white;
+	background: rgb(197, 17, 98);
 }
 
 .main-header .container::before {
@@ -82,21 +105,19 @@ body > * > * > *::before {
 	bottom: -28px;
 }
 
-.main-navigation::before {
-	content: "main-navigation";
-}
-
+/*
 .user-block::before {
 	content: "user-block";
 }
 
+/* INDEX */
+/*
 .index-logo::before {
 	content: "index-logo";
 }
 
 .feauteres::before {
 	content: "feauteres";
-	top: -28px;
 }
 
 .feauteres-item::before {
@@ -119,10 +140,6 @@ body > * > * > *::before {
 	right: 0;
 }
 
-.main-footer::before {
-	content: "main-footer";
-}
-
 .footer-contacts::before {
 	content: "footer-contacts";
 }
@@ -133,6 +150,34 @@ body > * > * > *::before {
 
 .footer-copyright::before {
 	content: "footer-copyright";
+}
+*/
+/* SHOP */
+.::before {
+	content: "";
+}
+
+/*
+.catalog-settings::before {
+	content: "catalog-settings";
+}
+
+
+.catalog-item::before {
+	content: "catalog-item";
+}
+*/
+
+.::before {
+	content: "";
+}
+
+.::before {
+	content: "";
+}
+
+.::before {
+	content: "";
 }
 
 /*
