@@ -3,14 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Барбершоп «Бородинский»</title>
+  <title>Набор для путешествий</title>
+  <link rel="stylesheet" type="text/css" href="сss/style-item.css">
+  <link rel="stylesheet" type="text/css" href="сss/html-academy-highlight-grid.css">
 </head>
 
 <body>
   <header class="main-header">
     <div class="container">
       <nav class="main-navigation">
-        <ul>
+        <ul> 
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Прайс-лист</a></li>
@@ -23,25 +25,31 @@
   </header>
 
   <main class="container">
-    <div class="container">
+      <!--
       <h2>Набор для путешествий «Baxter of California»</h2>
-      <section class="navigation-tree">
-        <ul>
-          <li class="navigation-tree-item"><a href="#">Главная</a></li>
-          <li class="navigation-tree-item"><a href="#">Магазин</a></li>
-          <li class="navigation-tree-item"><a href="#">Средства для ухода</a></li>
-          <li class="navigation-tree-item chosen"><span>Набор для путешествий «Baxter of California»</span></li>
-        </ul>
-      </section>
+    -->
+    <div class="breadcrumbs">
+      <ul>
+        <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+        <li class="breadcrumbs-item"><a href="#">Магазин</a></li>
+        <li class="breadcrumbs-item"><a href="#">Средства для ухода</a></li>
+        <li class="breadcrumbs-item chosen"><span>Набор для путешествий «Baxter of California»</span></li>
+      </ul>
+    </div>
+
+    <section class="item clearfix">
+
       <div class="item-pictures">
+
         <img src="img/travel-kit-1.png" alt="Набор для путешествий «Baxter of California»" width="460" height="499">
-        <img src="img/travel-kit-2.png" alt="Набор для путешествий «Baxter of California»" width="140" height="149">
-        <img src="img/travel-kit-3.png" alt="Набор для путешествий «Baxter of California»" width="140" height="149">
-        <img src="img/travel-kit-1.png" alt="Набор для путешествий «Baxter of California»" width="140" height="149">
+        <img class="item-picture-small" src="img/travel-kit-2.png" alt="Набор для путешествий «Baxter of California»" width="140" height="149">
+        <img class="item-picture-small" src="img/travel-kit-3.png" alt="Набор для путешествий «Baxter of California»" width="140" height="149">
+        <img class="item-picture-small" src="img/travel-kit-1.png" alt="Набор для путешествий «Baxter of California»" width="140" height="149">
+
       </div>
 
       <section class="item-description">
-
+      <!--
         <b class="in-stock">Есть в наличии</b>
         <b class="article">Артикул: DEXTER-AE</b>
         <p>
@@ -49,8 +57,10 @@
         </p>
         <b class="catalog-item-price">2 900 руб.</b>
         <a href="#" class="btn btn-buy">Купить</a>
-      </section>
-      <section class="item-composition">
+      -->
+    </section>
+    <section class="item-composition">
+      <!--
         <h2>В набор входят:</h2>
         <ul class="composition-list">
           <li class="composition-item">Средство для умывания (50 мл)</li>
@@ -59,32 +69,34 @@
           <li class="composition-item">Крем после бритья, шампунь (50 мл)</li>
           <li class="composition-item">Удобная кожаная косметичка</li>
         </ul>
-      </section>
-    </div>
-  </main>
-  
-  <footer class="main-footer">
-        <div class="container">
-          <div class="footer-contacts">
-            <p>
-              Барбершоп «Бородинский»<br>
-              Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-              <a href="#">Как нас найти?</a><br> 
-              Телефон: +7 (812) 666-02-66
-            </p>  
-          </div>
-          <div class="footer-social">
-            <p>Давайте дружить!</p>
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a> 
-          </div>
-          <div class="footer-copyright">
-            <p>Разработано</p>
-            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-          </div>
-        </div>
-      </footer>
-    </body>
+      -->
+    </section>
+  </section>
 
-    </html>
+</main>
+
+<footer class="main-footer clearfix">
+  <div class="container">
+    <div class="footer-contacts">
+      <p>
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="#">Как нас найти?</a><br> 
+        Телефон: +7 (812) 666-02-66
+      </p>  
+    </div>
+    <div class="footer-social">
+      <p>Давайте дружить!</p>
+      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-inst" href="#">Инстаграм</a> 
+    </div>
+    <div class="footer-copyright">
+      <p>Разработано</p>
+      <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

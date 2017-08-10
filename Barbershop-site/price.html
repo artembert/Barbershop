@@ -3,13 +3,15 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Магазин. Брабершоп «Бородинский»</title>
+	<title>Прайс-лист. Брабершоп «Бородинский»</title>
+	<link rel="stylesheet" type="text/css" href="сss/style-price.css">
+	<link rel="stylesheet" type="text/css" href="сss/html-academy-highlight-grid.css">
 </head>
 
 <body>
 
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<nav class="main-navigation">
 				<ul>
 					<li><a href="#">Информация</a></li>
@@ -23,17 +25,23 @@
 		</div>
 	</header>
 
-	<main class="container">
-		<div class="container">
-			<h1>Прайс-лист</h1>
-			<div class="navigation-tree">
-				<ul>
-					<li class="navigation-tree-item"><a href="#">Главная</a></li>
-					<li class="navigation-tree-item chosen"><span>Прайс-лист</span></li>
-				</ul>
-			</div>
+	<main class="container clearfix">
+			<!--
+			<h2>Прайс-лист</h2>
+		-->
+
+		<div class="breadcrumbs">
+			<ul>
+				<li class="breadcrumbs-item"><a href="#">Главная</a></li>
+				<li class="breadcrumbs-item chosen"><span>Прайс-лист</span></li>
+			</ul>
+		</div>
+<!--
 			<p class="slogan">Истинно мужская классика</p>
+		-->
+		<div class="first-line clearfix">
 			<section class="treatments">
+			<!--
 				<h2>Мы используем только лучшие средства:</h2>
 				<ul class="treatments-list">
 					<li class="treatments-item">Baxter of California</li>
@@ -41,8 +49,10 @@
 					<li class="treatments-item">Suavechito</li>
 					<li class="treatments-item">Malin+Goetz</li>
 				</ul>
-			</section>
-			<section class="price">
+			-->
+		</section>
+		<section class="price">
+			<!--
 				<h2>Цены на услуги наших мастеров:</h2>
 				<table>
 					<tr>
@@ -58,38 +68,50 @@
 						<td>350 р.</td>
 					</tr>
 				</table>
-			</section>
-			<section class="about-us">
+			-->
+		</section>
+	</div>
+	<section class="about-us">
+		<div class="about-us-two-columns clearfix">
+			<!--
 				<h2>Несколько слов о нас</h2>
-				<div class="left-column">
+			-->
+			<div class="about-us-left-column">
+				<!--
 					<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас&nbsp;&mdash; это уникальная и&nbsp;продуманная до&nbsp;мелочей работа. Мы&nbsp;не&nbsp;работаем на&nbsp;количество, мы&nbsp;делаем качество.</p>
-				</div>
-				<div class="right-column">
+				-->
+			</div>
+			<div class="about-us-right-column">
+				<!--
 					<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас&nbsp;&mdash; это уникальная и&nbsp;продуманная до&nbsp;мелочей работа. Мы&nbsp;не&nbsp;работаем на&nbsp;количество, мы&nbsp;делаем качество.</p>
-				</div>
-			</section>
-			<footer class="main-footer">
-				<div class="container">
-					<div class="footer-contacts">
-						<p>
-							Барбершоп «Бородинский»<br>
-							Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-							<a href="#">Как нас найти?</a><br> 
-							Телефон: +7 (812) 666-02-66
-						</p>  
-					</div>
-					<div class="footer-social">
-						<p>Давайте дружить!</p>
-						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-						<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-						<a class="social-btn social-btn-inst" href="#">Инстаграм</a> 
-					</div>
-					<div class="footer-copyright">
-						<p>Разработано</p>
-						<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-					</div>
-				</div>
-			</footer>
-		</body>
+				-->
+			</div>
+		</div>
+	</section>
+</main>
 
-		</html>
+<footer class="main-footer">
+	<div class="container clearfix">
+		<div class="footer-contacts">
+			<p>
+				Барбершоп «Бородинский»<br>
+				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+				<a href="#">Как нас найти?</a><br> 
+				Телефон: +7 (812) 666-02-66
+			</p>  
+		</div>
+		<div class="footer-social">
+			<p>Давайте дружить!</p>
+			<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+			<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+			<a class="social-btn social-btn-inst" href="#">Инстаграм</a> 
+		</div>
+		<div class="footer-copyright">
+			<p>Разработано</p>
+			<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+		</div>
+	</div>
+</footer>
+</body>
+
+</html>

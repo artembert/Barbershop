@@ -11,11 +11,9 @@ html {
 	background-repeat: no-repeat;	
 }
 
-/*body {
-	background-image: url("../img/bg-photo.jpg");
-	background-repeat: no-repeat;
+/*
 	background-color: #000000;
-}*/
+*/
 
 .clearfix::after {
     content: "";
