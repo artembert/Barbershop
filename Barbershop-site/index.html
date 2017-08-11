@@ -6,9 +6,9 @@
   <title>Барбершоп «Бородинский»</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="сss/normalize.css">
-  
+  <!--
   <link rel="stylesheet" type="text/css" href="сss/html-academy-highlight-grid.css">
-  
+  -->
   <link rel="stylesheet" type="text/css" href="сss/style-index.css">
 </head>
 
@@ -102,15 +102,15 @@
          ПН — ПТ: с 10:00 до 22:00<br> 
          СБ — ВС: с 10:00 до 19:00
        </p>
-       <a class="btn" href="#">Как проехать</a><!--
-     --><a class="btn" href="#">Обратная связь</a>
+       <a class="btn contacts" href="#">Как проехать</a><!--
+     --><a class="btn contacts" href="#">Обратная связь</a>
      
    </div>
    <div class="index-contetn-right">
      
     <h2 class="index-content-title">Записаться</h2>
     <p>Укажите желаемую дату и&nbsp;время и&nbsp;мы&nbsp;свяжемся с&nbsp;вами для подтверждения брони</p>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="appointment-form" action="#" method="post">
       <input type="text" name="date" value="" placeholder="Дата">
       <input type="text" name="time" value="" placeholder="Время">
       <input type="text" name="name" value="" placeholder="Ваше имя">
@@ -137,14 +137,15 @@
     <div class="footer-social">
       
       <p>Давайте дружить!</p>
+      <!--<div class="soical-block">-->
       <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
       <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
       <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      
+    <!-- </div> --> 
     </div>
     <div class="footer-copyright">
       
-      <p>Разработано</p>
+      <p>Разработано:</p>
       <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
       
     </div>
