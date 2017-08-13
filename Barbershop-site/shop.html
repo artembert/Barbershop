@@ -4,8 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Магазин. Брабершоп «Бородинский»</title>
-	<link rel="stylesheet" type="text/css" href="сss/style-shop.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="сss/normalize.css">
+	<!-- 
 	<link rel="stylesheet" type="text/css" href="сss/html-academy-highlight-grid.css">
+-->
+<link rel="stylesheet" type="text/css" href="сss/style-shop.css">
 </head>
 
 <body>
@@ -26,42 +30,78 @@
 	</header>
 
 	<main class="container">
-			<!--
-			<h2>Средства для ухода</h2>
-		-->
+
+		<h2>Средства для ухода</h2>
+
 		<div class="breadcrumbs">
 			<ul>
 				<li class="breadcrumbs-item"><a href="#">Главная</a></li>
 				<li class="breadcrumbs-item"><a href="#">Магазин</a></li>
-				<li class="breadcrumbs-item chosen"><span>Средства для ухода</span></li>
+				<li class="chosen"><span>Средства для ухода</span></li>
 			</ul>
 		</div>
 		<div class="catalog clearfix">
 			<section class="catalog-settings">
 				<form action="https://echo.htmlacademy.ru" method="get">
 					<fieldset>
-						<!--
-							<legend><h2>Производители:</h2></legend>
-							<ul>
-							<li><label><input type="checkbox" name="Baxter_of_California" value="Baxter of California">Baxter of California</label></li>
-							<li><label><input type="checkbox" name="Mr_Natty" value="Mr Natty">Mr Natty</label></li>
-							<li><label><input type="checkbox" name="Suavechito" value="Suavechito">Suavechito</label></li>
-							<li><label><input type="checkbox" name="Malin_Goetz" value="Malin+Goetz">Malin+Goetz</label></li>
-							<li><label><input type="checkbox" name="Murrays" value="Murray`s">Murray`s</label></li>
-							<li><label><input type="checkbox" name="American_Crew" value="American Crew">American Crew</label></li>
-							</ul>
-						</fieldset>
-					-->
-						<!--
-						<fieldset>
-							<legend><h2>Группы товаров:</h2></legend>
-							<ul>
-							<li><label><input type="radio" name="goods-group" value="Бритвенные принадлежности">Бритвенные принадлежности</label></li>
-							<li><label><input type="radio" name="goods-group" value="Средства для ухода" checked>Средства для ухода</label></li>
-							<li><label><input type="radio" name="goods-group" value="Аксессуары">Аксессуары</label></li>
-							</ul>
-						</fieldset>
-					-->
+						
+						<legend class="catalog-setting-title">Производители:</legend>
+						<ul>
+							<li><label>
+								<input class="checkbox" type="checkbox" name="Baxter_of_California">
+								<span class="checkbox-custom"></span>
+								<span class="label">Baxter of California</span>
+							</label></li>
+							<li><label>
+								<input class="checkbox" type="checkbox" name="Mr_Natty">
+								<span class="checkbox-custom"></span>
+								<span class="label">Mr Natty</span>
+							</label></li>
+							<li><label>
+								<input class="checkbox" type="checkbox" name="Suavechito" disabled>
+								<span class="checkbox-custom"></span>
+								<span class="label">Suavechito</span>
+							</label></li>
+							<li><label>
+								<input class="checkbox" type="checkbox" name="Malin_Goetz" disabled checked>
+								<span class="checkbox-custom"></span>
+								<span class="label">Malin+Goetz</span>
+							</label></li>
+							<li><label>
+								<input class="checkbox" type="checkbox" name="Murrays">
+								<span class="checkbox-custom"></span>
+								<span class="label">Murray`s</span>
+							</label></li>
+							<li><label>
+								<input class="checkbox" type="checkbox" name="American_Crew">
+								<span class="checkbox-custom"></span>
+								<span class="label">American Crew</span>
+							</label></li>
+						</ul>
+					</fieldset>
+
+
+					<fieldset>
+						<legend class="catalog-setting-title">Группы товаров:</legend>
+						<ul>
+							<li><label>
+								<input class="radio" type="radio" name="goods-group">
+								<span class="radio-custom"></span>
+								<span class="label">Бритвенные принадлежности</span>
+							</label></li>
+							<li><label>
+								<input class="radio" type="radio" name="goods-group" checked>
+								<span class="radio-custom"></span>
+								<span class="label">Средства для ухода</span>
+							</label></li>
+							<li><label>
+								<input class="radio" type="radio" name="goods-group">
+								<span class="radio-custom"></span>
+								<span class="label">Аксессуары</span>
+							</label></li>
+						</ul>
+					</fieldset>
+
 					<button class="btn" type="button">Показать</button>
 				</form>
 			</section>
@@ -156,8 +196,8 @@
 </main>
 
 <footer class="main-footer">
-  <div class="container clearfix">
-    <div class="footer-contacts">
+	<div class="container clearfix">
+		<div class="footer-contacts">
     <!--
       <p>
         Барбершоп «Бородинский»<br>
@@ -165,23 +205,23 @@
         <a href="#">Как нас найти?</a><br> 
         Телефон: +7 (812) 666-02-66
       </p> 
-      --> 
-    </div>
-    <div class="footer-social">
+    --> 
+  </div>
+  <div class="footer-social">
     <!--
       <p>Давайте дружить!</p>
       <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
       <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
       <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      -->
-    </div>
-    <div class="footer-copyright">
+    -->
+  </div>
+  <div class="footer-copyright">
     <!--
       <p>Разработано</p>
       <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-      -->
-    </div>
+    -->
   </div>
+</div>
 </footer>
 </body>
 

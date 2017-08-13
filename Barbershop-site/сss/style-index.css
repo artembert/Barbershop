@@ -22,14 +22,18 @@ html {
 	color: #ffffff;
 }
 
-/*
-	background-color: #000000;
-*/
 
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+.container {
+	width: 940px;
+	margin: auto;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 /* КНОПКИ */
@@ -91,13 +95,6 @@ html {
 	min-height: 72px;
 	background: #000000;
 	color: #ffffff;
-}
-
-.container {
-	width: 940px;
-	margin: auto;
-	padding-right: 10px;
-	padding-left: 10px;
 }
 
 .main-navigation {
@@ -165,7 +162,7 @@ html {
 .user-block a::before {
 	content: "";
 	position: absolute;
-	background: url("../img/icon-login.png") no-repeat;
+	background: url("../img/barbershop-index-sprites.png") -10px -10px;
 	opacity: 0.3;
 
 	top: 27px;
@@ -438,6 +435,9 @@ html {
 	height: 43px;
 	font-size: 0;
 	text-decoration: none;
+
+	transition:
+		background-position 0.5s;
 }
 
 .social-btn:hover {
@@ -445,27 +445,33 @@ html {
 }
 
 .social-btn-vk {
-	background: url("../img/social-vk.png") no-repeat;
+	   width: 43px; height: 43px;
+    background: url("../img/barbershop-index-sprites.png") -10px -298px;
 }
 
 .social-btn-fb {
-	background: url("../img/social-fb.png") no-repeat;
+	width: 43px; height: 43px;
+	background: url("../img/barbershop-index-sprites.png") -10px -46px;
 }
 
 .social-btn-inst {
-	background: url("../img/social-inst.png") no-repeat;
+	width: 43px; height: 43px;
+	background: url("../img/barbershop-index-sprites.png") -10px -172px;
 }
 
 .social-btn-vk:hover {
-	background: url("../img/social-vk-hover.png") no-repeat;
+	width: 43px; height: 43px;
+	background: url("../img/barbershop-index-sprites.png") -10px -361px;
 }
 
 .social-btn-fb:hover {
-	background: url("../img/social-fb-hover.png") no-repeat;
+	width: 43px; height: 43px;
+	background: url("../img/barbershop-index-sprites.png") -10px -109px;
 }
 
 .social-btn-inst:hover {
-	background: url("../img/social-inst-hover.png") no-repeat;
+	width: 43px; height: 43px;
+	background: url("../img/barbershop-index-sprites.png") -10px -235px;
 }
 
 
