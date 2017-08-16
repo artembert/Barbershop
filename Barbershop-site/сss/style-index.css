@@ -435,9 +435,6 @@ html {
 	height: 43px;
 	font-size: 0;
 	text-decoration: none;
-
-	transition:
-		background-position 0.5s;
 }
 
 .social-btn:hover {

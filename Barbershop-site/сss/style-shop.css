@@ -6,12 +6,13 @@ body {
 }
 
 html {
-	 /* ФОН  
+	  ФОН  
 	background-image: url("../img/barbershop-shop.png");
-	 /* МАКЕТ  */
-	background-image: url("../img/barbershop-shop.png");
+	 /* МАКЕТ  
+	background-image: url("../img/barbershop-shop.png");*/
 	background-position: top center;
-	 */
+	background-repeat: no-repeat;
+	
 	background-repeat: no-repeat;	
 	background-position: center top;
 	background-color: #000000;
@@ -44,9 +45,9 @@ html {
 .btn {
 	display: inline-block;
 	box-sizing: border-box;
-	min-height: 43px;
+	height: 43px;
 	padding: 10px;
-	min-width: 140px;
+	width: 140px;
 	/*
 	font-family: 'PT Sans Narrow', 'Tahoma', sans-serif;
 	font-weight: 700;
@@ -95,7 +96,7 @@ html {
 
 .main-header {
 	min-height: 72px;
-	/*background: #000000;*/
+	background: #000000;
 	color: #ffffff;
 }
 
@@ -133,6 +134,25 @@ html {
 
 .main-navigation a:hover {
 	background-color: #242424;
+}
+
+.main-navigation .header-logo {
+	padding-top: 23px;
+	padding-bottom: 21px;
+}
+
+.main-navigation .chosen {
+	position: relative;
+}
+
+.main-navigation .chosen::after {
+	position: absolute;
+	content: "";
+	width: 56px;
+	height: 4px;
+	background-color: #ffffff;
+	bottom: 0;
+	left: 20px;
 }
 
 .user-block {
@@ -182,7 +202,9 @@ html {
 main {
 	padding-top: 49px;
 	color: #000000;
-	background:	#f8f5f2 url("../img/pattern-white.gif");
+	
+	background:	#000000 url("../img/pattern-white.gif");
+	padding-bottom: 64px;
 }
 
 h2 {
@@ -240,7 +262,6 @@ h2 {
 .catalog-settings {
 	width: 220px;
 	float: left;
-	min-height: 570px;
 	margin-right: 20px;
 }
 
@@ -288,7 +309,7 @@ form .btn {
 	margin-top: 53px;
 	padding: 0;
 	box-sizing: border-box;
-	min-width: 112px;
+	width: 112px;
 }
 
 .catalog-settings label {
@@ -366,40 +387,196 @@ form .btn {
 	justify-content: space-between;
 	width: 700px;
 	float: right;
-	min-height: 595px;
 }
 
 .catalog-item {
 	width: 220px;
-	height: 290px;
+	height: 286px;
 	margin-bottom: 20px;
+
+	box-shadow: 0 0 5px 0 rgba(0, 1, 1, 0.2);
+}
+
+
+.catalog-item-description {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: space-between;
+
+	box-sizing: border-box;
+	height: 121px;
+	width: 220px;
+	padding: 16px;
+	padding-top: 14px;
+
+	background-color: #ffffff;
+
+}
+
+.catalog-item-description .category,
+.catalog-item-description .title {
+	display: block;
+}
+
+.catalog-item-description > a {
+	font: inherit;
+	line-height: 18px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.catalog-item-description .category {
+	text-transform: none;
+}
+
+.catalog-item-description .title {
+	text-transform: inherit;
+}
+
+.catalog-item-buy {
+	display: inline-flex;
+}
+
+.catalog-item-price {
+	box-sizing: border-box;
+	width: 109px;
+	height: 43px;
+
+	font: inherit;
+	line-height: inherit;
+	text-transform: inherit;
+	text-decoration: none;
+
+	text-align: center;
+
+	padding: 10px;
+	color: #000000;
+	background-color: #e5e5e5;
+	border: none;
+	outline: none;
+}
+
+.catalog-item .btn-buy {
+	width: 78px;
 }
 
 .paginator {
-	margin-top: 20px;
+	margin-top: 32px;
 }
+
+.paginator .btn-paginator {
+	box-sizing: border-box;
+	width: 43px;
+	margin-right: 4px;
+	padding: 0;
+	padding-top: 9px;
+}
+
+.paginator .chosen {
+	color: #000000;
+	background-color: #ffffff;
+}
+
 
 /* FOOTER */
 .main-footer {
-	margin-top: 65px;
-	padding-top: 60px;
+	box-sizing: border-box;	
+	min-height:	189px;
+	padding-top: 58px;
+	background: #232323 url("../img/pattern-black.gif");
+	color: #ffffff;
 }
 
 .footer-contacts {
-	min-height: 90px;
 	width: 320px;
 	float: left;
 	margin-right: 60px; 
 }
 
-.footer-social {
-	min-height: 90px;
-	width: 180px;
-	float: left;
+.main-footer p {
+	padding: 0;
+	margin: 0;
 }
 
+.footer-contacts a {
+	color: #ffffff;
+}
+
+.footer-contacts a:hover {
+	text-decoration: none;
+}
+
+.footer-social {
+	display: flex;
+	width: 141px;
+	float: left;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footer-social p {
+	margin-bottom: 15px;
+	display: block;
+	width: 100%;
+}
+
+.social-btn {
+	background: #000000;
+	width: 43px;
+	height: 43px;
+	font-size: 0;
+	text-decoration: none;
+}
+
+.social-btn:hover {
+	background-color: #ffffff;
+}
+
+.social-btn-vk {
+	   width: 43px; height: 43px;
+    background: url("../img/barbershop-index-sprites.png") -10px -298px;
+}
+
+.social-btn-fb {
+	width: 43px; height: 43px;
+	background: url("../img/barbershop-index-sprites.png") -10px -46px;
+}
+
+.social-btn-inst {
+	width: 43px; height: 43px;
+	background: url("../img/barbershop-index-sprites.png") -10px -172px;
+}
+
+.social-btn-vk:hover {
+	width: 43px; height: 43px;
+	background: url("../img/barbershop-index-sprites.png") -10px -361px;
+}
+
+.social-btn-fb:hover {
+	width: 43px; height: 43px;
+	background: url("../img/barbershop-index-sprites.png") -10px -109px;
+}
+
+.social-btn-inst:hover {
+	width: 43px; height: 43px;
+	background: url("../img/barbershop-index-sprites.png") -10px -235px;
+}
+
+
+/*url("../img/social-vk.png")*/
+
 .footer-copyright {
-	min-height: 90px;
-	width: 180px;
+	min-width: 140px;
 	float: right;
+}
+
+.footer-copyright p {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.footer-copyright .btn {
+	margin: 0;
 }
