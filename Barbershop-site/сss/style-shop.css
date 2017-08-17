@@ -486,6 +486,20 @@ form .btn {
 	padding-top: 58px;
 	background: #232323 url("../img/pattern-black.gif");
 	color: #ffffff;
+
+	position: relative;
+
+	box-shadow: inset 0px 30px 30px 0px rgba(0, 0, 0, 0.5);
+}
+
+.main-footer::after {
+	position: absolute;
+	content: "";
+	height: 41px:
+	width: 960px;
+	left: 0;
+	top: 0;
+	background-image: url("../img/footer-shadow.png");
 }
 
 .footer-contacts {
