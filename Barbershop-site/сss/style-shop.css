@@ -138,7 +138,7 @@ html {
 
 .main-navigation .header-logo {
 	padding-top: 23px;
-	padding-bottom: 21px;
+	padding-bottom: 19px;
 }
 
 .main-navigation .chosen {
@@ -249,7 +249,7 @@ h2 {
 	transform: rotate(45deg);
 }
 
-.chosen {
+.breadcrumbs .chosen {
 	color: #aba9a7;
 }
 
@@ -492,20 +492,10 @@ form .btn {
 	box-shadow: inset 0px 30px 30px 0px rgba(0, 0, 0, 0.5);
 }
 
-.main-footer::after {
-	position: absolute;
-	content: "";
-	height: 41px:
-	width: 960px;
-	left: 0;
-	top: 0;
-	background-image: url("../img/footer-shadow.png");
-}
-
 .footer-contacts {
 	width: 320px;
 	float: left;
-	margin-right: 60px; 
+	margin-right: 80px; 
 }
 
 .main-footer p {
